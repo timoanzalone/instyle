@@ -27,6 +27,24 @@ function placeImage(x, y) {
   }
 }
 
+function placeImageTouch(screenX, screenY) {
+  const nextSrc = images[i]
+  
+  const img = document.createElement("img")
+  img.setAttribute("src", nextSrc)
+  img.setAttribute("draggable", "false")
+  
+  img.style.left = screenX + "px"
+  img.style.top = screenY + "px"
+  img.style.transform = "translate(-50%, -50%) scale(0.5) rotate(" + (Math.random() * 20 - 10) + "deg)"
+  
+  document.getElementById("right").appendChild(img)
+  i = i + 1
+  if (i >= images.length) {
+    i = 0
+  }
+}
+
 function removeImage() {
   const simg = document.getElementById("right").firstChild.innerHTML
   document.getElementById("right").removeChild("simg")
@@ -43,9 +61,9 @@ document.getElementById("right").addEventListener("mousemove", function (event) 
   removeImage();
 })
 
-document.addEventListener("touchend", function (event) {
+document.getElementById("right").addEventListener("touchend", function (event) {
   event.preventDefault()
-  placeImage(event.pageX, event.pageY)
+  placeImageTouch(event.clientX, event.clientY)
 })
 
 
