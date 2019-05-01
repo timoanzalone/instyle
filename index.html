@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+<!--<![endif]-->
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title></title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="">
+</head>
+
+<body>
+  <div class="wrapper">
+    <div id="left" style="padding-top:100px;">
+      <h1 style="font-family: playfair display; font-size: 50px;">This is not a showroom,<br>this is your home.</h1>
+
+      <div style="max-width: 450px;"><p>
+        IN STYLE has a unique vision embodied by two different aims: to build a relationship where the client is enhanced with trust and to maximize the quality of the distribution.
+      </p>
+      
+      <p>
+        IN STYLE was established in 2005, and it all started with an independent showroom of 750 square meters at L’Isola District, close to the futuristic area of Corso Como. Due to a fast business growth, in 2011, IN STYLE GROUP moved to a bigger showroom of 1,700 square meters in via Palermo, in the heart of Brera Art District.
+      </p>
+
+      <p>
+        A SHOWROOM with 12 years of experience made IN STYLE leader in the market focusing on advanced contemporary brands and adding an “out-of-the-box”meaning to the new concept of fashion.
+      </p>
+      
+      <p>The result was that in 2011 IN STYLE GROUP expanded with DISTRIBUTION being able to provide brands with complete logistic service.<br>
+      With great passion for fashion and expanding knowledge of territory, In Style partnered with Brama Sportswear to open Brama In Style. A new showroom located in Madrid, boasting the same exceptional brand selection, specializing in the territory of Spain.</div></p>
+      
+      
+
+    </div>
+
+      <div id="right">
+
+      </div>
+
+  </div>
+  <style>
+    body {
+      padding: 0;
+      margin: 0;
+      width: 100%;
+    }
+    .wrapper {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      width: 100%;
+      height: 100vh;
+      overflow: hidden;
+    }
+
+    #left {
+      padding-right: 100px;
+      padding-left: 100px;
+      overflow-y: scroll;
+      scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none;  /* IE 10+ */
+    font-family: "aktiv grotesk";
+    z-index: 1000;
+    }
+
+    #left::-webkit-scrollbar { /* WebKit */
+    width: 0;
+    height: 0;
+    }
+
+    #right {
+      background-color: #EDC1AE;
+      height: 100vh;
+      width: 100%;
+      overflow: hidden !important;
+
+    }
+
+    @keyframes fadein {
+      0% {
+        opacity: 0;
+      }
+
+      100% {
+        opacity: 1;
+      }
+    }
+
+    img {
+      position: fixed;
+      top: 200px;
+      right: 100px;
+      transform: translate(-50%, -50%) scale(0.5);
+      animation: fadein 0.5s;
+    }
+  </style>
+
+  <script src="collage.js" async defer></script>
+</body>
+
+</html>
